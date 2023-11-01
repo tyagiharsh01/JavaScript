@@ -36,7 +36,20 @@ const users  =[
         name:"harsh"
     }
 ]
-console.log(Object.keys(yPayUser))
-console.log(Object.values(yPayUser))
-console.log(Object.entries(yPayUser))
-console.log(yPayUser.hasOwnProperty('name'))
+//console.log(Object.keys(yPayUser))
+//console.log(Object.values(yPayUser))
+//console.log(Object.entries(yPayUser))
+//console.log(yPayUser.hasOwnProperty('name'))
+
+
+// destructuring of object
+
+const course ={
+    courseName:"JavaScript",
+    price:9999,
+    courseTeacher:"Hitesh Chaudhary"
+}
+const{courseName,price,courseTeacher:teacher} = course
+console.log(price);
+console.log(courseName);
+console.log(teacher);
